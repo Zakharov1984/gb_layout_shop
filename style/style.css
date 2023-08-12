@@ -73,6 +73,52 @@ ul {
   height: auto;
 }
 
+.promo {
+  display: flex;
+  min-height: 764px;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+  min-height: 764px;
+  background: #F1E4E6;
+}
+
+
+
+.promo__contnet-left {
+  background: url('../img/main/main_man.png')
+}
+
+.promo__contnet-left, .promo__contnet-right {
+  width: 50%
+}
+
+.promo__text {
+  height: 92px;
+  margin-top: 260px;
+  margin-left: 64px;
+  padding-left: 16px; 
+  border-left: 12px solid #F16D7F;
+  
+}
+
+.promo__title {
+  color: #222;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.promo__subtitle {
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.promo__subtitle span {
+  color: #F16D7F;
+}
+
+
+
 .offer {
   margin-top: 65px;
 }
