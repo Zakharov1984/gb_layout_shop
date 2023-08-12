@@ -9,7 +9,7 @@ ul {
   list-style: none;
 }
 
-.conteiner {
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -22,7 +22,7 @@ ul {
 
 .header__content {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between; 
 }
 
 .header__left {
@@ -30,7 +30,7 @@ ul {
   align-items: flex-end;
 }
 
-.header__wrapper-logo {
+.header__link-logo {
   margin-right: 11px;
   padding-right: 15px;
   background-color: inherit;
@@ -74,8 +74,35 @@ ul {
 }
 
 .offer {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 260px 180px;
+  gap: 30px;
+  margin-top: 65px;
+}
+
+.offer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__item_woman {
 
 }
+
+.offer__item_man {
+
+}
+
+.offer__item_kids {
+
+}
+
+.offer__item_accesories {
+
+}
+
 
 .products {
   margin: 96px 0 60px;
