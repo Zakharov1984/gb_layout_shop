@@ -74,35 +74,57 @@ ul {
 }
 
 .offer {
+  margin-top: 65px;
+}
+
+.offer__content {
   display: grid;
   grid-template-columns: repeat(3, 360px);
   grid-template-rows: 260px 180px;
   gap: 30px;
-  margin-top: 65px;
 }
 
 .offer__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.offer__item_woman {
-
-}
-
-.offer__item_man {
-
-}
-
-.offer__item_kids {
-
+  position: relative;
 }
 
 .offer__item_accesories {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.offer__item-img {
+  width: 100%;  
+}
+
+.offer__item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 22, 22, 0.70);
+}
+
+.offer__item-subtitle {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
 
 }
 
+.offer__item-title {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 700;
+
+}
 
 .products {
   margin: 96px 0 60px;
