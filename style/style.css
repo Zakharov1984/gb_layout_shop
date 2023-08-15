@@ -10,7 +10,8 @@ ul {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -101,7 +102,7 @@ ul {
 
 
 .promo__contnet-left {
-  background: url('../img/main/main_man.png')
+  background: url('../img/main/main_man.png') center center / cover no-repeat;
 }
 
 .promo__contnet-left, .promo__contnet-right {
