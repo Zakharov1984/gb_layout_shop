@@ -73,6 +73,22 @@ ul {
   height: auto;
 }
 
+.btn-basket {
+  position: relative;
+}
+
+.btn-basket__counter {
+  position: absolute;
+  top: -8px;
+  right: 7px;
+  padding: 3px 7px;
+  border-radius: 100%;
+  background-color:#F16D7F;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .promo {
   display: flex;
   min-height: 764px;
