@@ -142,8 +142,8 @@ ul {
 
 .offer__content {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
-  grid-template-rows: 260px 180px;
+  grid-template-columns: repeat(3, minmax(auto, 360px));
+  grid-template-rows: minmax(auto, 260) minmax(auto, 180px);
   gap: 30px;
 }
 
@@ -159,7 +159,8 @@ ul {
 }
 
 .offer__item-img {
-  width: 100%;  
+  width: 100%;
+  height: 100%;  
 }
 
 .offer__item-content {
