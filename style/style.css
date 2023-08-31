@@ -312,6 +312,51 @@ ul {
   margin-right: 10px;
 }
 
+.advantages {
+  padding-top: 104px;
+  padding-bottom: 104px;
+  background-color: #222224;
+}
+
+.advantages__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 360px;
+}
+
+.advantages__item-image {
+  display: block;
+  height: 31px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.advantages__item-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  color: #fbfbfb;
+  padding: 0 22px;
+}
+
+.advantages__item-subtitle {
+  margin-top: 16px;
+  color: #FBFBFB;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 .subscribe {
   background: url("../img//subscibe/subscrybeBg.jpg") center center/cover no-repeat;
   min-height: 448px;
@@ -354,7 +399,7 @@ ul {
   text-transform: uppercase;
 }
 
-.ubscribe__right-subtitle {
+.subscribe__right-subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 30.1px;
@@ -404,20 +449,23 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 79px;
+  min-height: 79px;
 }
 
-.footer .footer_text_left {
+.footer__left {
   font-size: 16px;
   font-weight: 400;
   color: #fbfbfb;
 }
 
-.footer .social_box {
+.footer__social {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;  
 }
 
-.footer .social_box .social_link_box {
+.footer__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,19 +476,11 @@ ul {
   transition: background-color 0.5s;
 }
 
-.footer .social_box .social_link_box:not(:first-child) {
-  margin-left: 7px;
-}
-
-.footer .social_box .social_link_box:not(:first-child) i {
-  transition: color 0.5s;
-}
-
-.footer .social_box .social_link_box:hover {
+.footer__social-link:hover {
   background-color: #f16d7f;
 }
 
-.footer .social_box .social_link_box:hover i {
+.footer__social-link:hover:hover i {
   color: #ffffff;
 }
 
@@ -477,6 +517,20 @@ ul {
 
 .products__items {
   gap: 15px;
+}
+
+.advantages {
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+
+.advantages__content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item {
+  margin-top: 48px;
 }
 
 .subscribe {
@@ -583,5 +637,14 @@ ul {
 
   .subscribe {
     min-height: 550px;
+  }
+
+  .footer__contnet {
+    flex-direction: column-reverse;
+    padding: 43px 0 9px;
+  }
+
+  .footer__left {
+    margin-top: 40px;
   }
 }
