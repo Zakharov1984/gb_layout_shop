@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1172px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@import './main';
+@import './catalog';
+@import './mediaRequest';
+
