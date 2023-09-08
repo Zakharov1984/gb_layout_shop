@@ -1,0 +1,48 @@
+@import './var';
+
+.subheader {
+  min-height: 148px;
+  background: #F8F3F4;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 59px; 
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $PINK_COLOR;
+    text-transform: uppercase;
+  }
+
+  &__bread-crumbs {
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+  }
+
+  &__bread-crumb-delimiter {
+    font-size: 16px;
+    font-weight: 300;
+    color: #636363;
+  }
+
+  &__bread-crumb-link {
+    font-size: 14px;
+    font-weight: 300;
+    color: #636363;
+    text-transform: uppercase;
+
+    &_active {
+      font-weight: 700;
+      color: $PINK_COLOR;
+    }
+  }
+
+  &__bread-crumb-delimiter {
+
+  }
+}
