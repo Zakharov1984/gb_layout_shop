@@ -64,6 +64,33 @@
   margin-top: 48px;
 }
 
+.cart {
+
+  &-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 64px;
+  }
+}
+
+.form-addres {
+  width: 360px;
+}
+
+.check {
+  width: 360px;
+  margin-top: 38px;
+}
+
+
 }
 
 @media(max-width: 767px) {
