@@ -611,6 +611,7 @@ h1, h2, h3 {
   font-weight: 700;
   color: #F16D7F;
 }
+
 .cloth {
   position: relative;
   background: #F7F7F7;
@@ -659,7 +660,7 @@ h1, h2, h3 {
   fill: #F16D7F;
 }
 .cloth-info {
-  width: 1141px;
+  width: 92.6%;
   min-height: 601px;
   position: absolute;
   left: 50%;
@@ -940,5 +941,52 @@ h1, h2, h3 {
   }
   .footer__left {
     margin-top: 40px;
+  }
+  .cloth {
+    margin-bottom: 730px;
+  }
+  .cloth-slider {
+    height: 768px;
+  }
+  .cloth-slider__img {
+    width: 466px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cloth-info {
+    width: 100%;
+    bottom: -77%;
+  }
+}
+@media (max-width: 500px) {
+  .subheader__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 24px;
+  }
+  .subheader__bread-crumbs {
+    padding-top: 32px;
+  }
+  .cloth {
+    height: 624px;
+    margin-bottom: 730px;
+  }
+  .cloth-slider {
+    height: 768px;
+  }
+  .cloth-slider__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .cloth-info {
+    width: 100%;
+    bottom: -100%;
+  }
+  .cloth-info__sort {
+    font-size: 10px;
   }
 }
