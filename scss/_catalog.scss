@@ -1,0 +1,27 @@
+.wrapper-next-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.next-page {
+  border: solid 1px #ebebeb;
+
+  &__link {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c4c4c4;
+    
+    &_active {
+      color: #EF5B70;
+    }
+  }
+}
+
+.fontBlack {
+  color: #000;
+}
