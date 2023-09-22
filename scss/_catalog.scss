@@ -120,3 +120,69 @@ details summary {
 .fontBlack {
   color: #000;
 }
+
+.preferences_box {
+  padding-top: 14px;
+  display: flex;
+  gap: 27px;
+  margin-left: 300px;
+
+  &_min {
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f6e6e;
+    cursor: pointer;
+
+    &:after {
+      content: "\f078";
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      font-size: 14px;
+      color: #6f6e6e;
+      margin-left: 10px;
+    }
+
+    &:hover .wrapper_tuning_box{
+      display: block;
+    }
+  }
+  .wrapper_tuning_box {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: -0px;
+    bottom: -108px;
+    padding-top: 5px;
+  }
+
+  .fine_tuning_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 79px;
+    min-height: 103px;
+    padding: 7px 30px 11px 9px;
+    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    background-color: #ffffff;
+
+    &_min {
+      display: flex;
+      align-items: center;
+      
+      .mark {
+        width: 12px;
+        height: 12px;
+        border: solid 1px #ebebeb;
+        margin-right: 10px;
+      }
+
+      .size {
+        font-size: 14px;
+        font-weight: 400;
+        color: #6f6e6e;
+      }
+    }
+  }
+}

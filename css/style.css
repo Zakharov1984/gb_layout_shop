@@ -899,6 +899,81 @@ details summary {
   color: #000;
 }
 
+.preferences_box {
+  padding-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 27px;
+  margin-left: 300px;
+}
+.preferences_box_min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+  cursor: pointer;
+}
+.preferences_box_min:after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  color: #6f6e6e;
+  margin-left: 10px;
+}
+.preferences_box_min:hover .wrapper_tuning_box {
+  display: block;
+}
+.preferences_box .wrapper_tuning_box {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  left: 0px;
+  bottom: -108px;
+  padding-top: 5px;
+}
+.preferences_box .fine_tuning_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 79px;
+  min-height: 103px;
+  padding: 7px 30px 11px 9px;
+  -webkit-box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  background-color: #ffffff;
+}
+.preferences_box .fine_tuning_box_min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.preferences_box .fine_tuning_box_min .mark {
+  width: 12px;
+  height: 12px;
+  border: solid 1px #ebebeb;
+  margin-right: 10px;
+}
+.preferences_box .fine_tuning_box_min .size {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 767px;
@@ -1071,6 +1146,17 @@ details summary {
     width: 100%;
     bottom: -77%;
   }
+  .preferences_box {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 12px;
+    max-width: 435px;
+    margin-left: auto;
+  }
+  .preferences_box_min {
+    font-size: 12px;
+  }
 }
 @media (max-width: 500px) {
   .subheader__content {
@@ -1102,5 +1188,11 @@ details summary {
   }
   .cloth-info__sort {
     font-size: 10px;
+  }
+  .tools-filter {
+    width: 87%;
+  }
+  .tools-filter__summary-heading-text {
+    display: none;
   }
 }

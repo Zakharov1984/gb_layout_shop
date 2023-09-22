@@ -177,6 +177,18 @@
       bottom: -77%
     }
   }
+
+  .preferences_box {
+    justify-content: flex-end;
+    gap: 12px;
+    max-width: 435px;
+    margin-left: auto;
+
+    &_min {
+      font-size: 12px;
+    }
+  }
+  
 }
 
 @media(max-width: 500px) {
@@ -213,5 +225,13 @@
         font-size: 10px;
       }
     }
+  }
+
+  .tools-filter {
+    width: 87%;
+  }
+
+  .tools-filter__summary-heading-text {
+    display: none;
   }
 }
